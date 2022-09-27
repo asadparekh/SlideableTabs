@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'asadparekh' => '106430397+asadparekh@users.noreply.github.com' }
-  s.source           = { :git => 'https://github.com/asadparekh/SlideableTabsLibrary.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/asadparekh/SlideableTabs.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
