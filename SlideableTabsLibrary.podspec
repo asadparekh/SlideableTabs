@@ -19,11 +19,4 @@ Pod::Spec.new do |s|
     'SlideableTabsLibrary' => ['SlideableTabsLibrary/**/*.storyboard','SlideableTabsLibrary/**/*.{storyboard,xib,db,html,json,strings}']
   }
 
-  
-  
-  
-  
-  
-  
-  
 end

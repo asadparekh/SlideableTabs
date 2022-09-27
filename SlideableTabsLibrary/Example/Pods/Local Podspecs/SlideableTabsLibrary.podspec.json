@@ -1,0 +1,22 @@
+{
+  "name": "SlideableTabsLibrary",
+  "version": "0.1.0",
+  "summary": "A short description of SlideableTabsLibrary.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/asadparekh/SlideableTabsLibrary",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "asadparekh": "106430397+asadparekh@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/asadparekh/SlideableTabsLibrary.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "SlideableTabsLibrary/Classes/**/*"
+}
