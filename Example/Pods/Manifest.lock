@@ -1,0 +1,16 @@
+PODS:
+  - SlideableTabsLibrary (1.0.0)
+
+DEPENDENCIES:
+  - SlideableTabsLibrary (from `../SlideableTabsLibrary`)
+
+EXTERNAL SOURCES:
+  SlideableTabsLibrary:
+    :path: "../SlideableTabsLibrary"
+
+SPEC CHECKSUMS:
+  SlideableTabsLibrary: 44f56064091d14cdc6a74254bd47dcce5fac4848
+
+PODFILE CHECKSUM: cfedae19a9001f63b9890ed1987fbccd9fee0487
+
+COCOAPODS: 1.11.3
