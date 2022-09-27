@@ -55,7 +55,7 @@ public class VC: UIViewController {
         pageVC.dataSource = self
         
         //for init display
-        pageTab.collView.scrollToItem(at: IndexPath(item: pageTab.currentIndex, section: 0), at: .centeredVertically, animated: true)
+        pageTab.collView.scrollToItem(at: IndexPath(item: pageTab.currentIndex, section: 0), at: .centeredHorizontally, animated: true)
         pageVC.setViewControllers([pageTab.viewControllers!.first!.vc], direction: .forward, animated: true)
         
         
@@ -116,7 +116,20 @@ extension VC:UIPageViewControllerDelegate,UIPageViewControllerDataSource{
         }
         return pageTab.viewControllers?[pIndex].vc
     }
-    
+    public func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
+        guard let vcIndex = pageTab.viewControllers?.firstIndex(where: { $0.vc == pendingViewControllers.first}) else {
+            return
+        }
+        pageTab.currentIndex = vcIndex
+        pageTab.collView.selectItem(at: IndexPath(item: vcIndex, section: 0), animated: true, scrollPosition: .centeredHorizontally)
+    }
+    public func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        guard let vcIndex = pageTab.viewControllers?.firstIndex(where: { $0.vc == previousViewControllers.first}) else {
+            return
+        }
+        pageTab.currentIndex = vcIndex
+        pageTab.collView.selectItem(at: IndexPath(item: vcIndex, section: 0), animated: true, scrollPosition: .centeredHorizontally)
+    }
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
 
         guard let vcIndex = pageTab.viewControllers?.firstIndex(where: { $0.vc == viewController}) else {

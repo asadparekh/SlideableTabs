@@ -7,9 +7,9 @@
 
 import UIKit
 
-class PageVC: UIPageViewController {
+public class PageVC: UIPageViewController {
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
