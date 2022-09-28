@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SlideableTabsLibrary'
-  s.version          = '0.0.1'
+  s.version          = '1.0.1'
   s.summary          = 'SlideableTabsLibrary'
   s.description      = "I don't know what to write as description"
 
